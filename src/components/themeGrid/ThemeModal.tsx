@@ -72,7 +72,7 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
                     mr={1}
                     d="inline-block"
                   />
-                  instantwm.{e[0]} : <Text as="span">{e[1]}</Text>
+                  instantwm.{e[0].toLowerCase()} : <Text as="span">{e[1]}</Text>
                 </Text>
               ))}
               {Object.entries(d.instantMENU).map((e, i) =>
