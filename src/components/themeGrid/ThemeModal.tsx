@@ -4,6 +4,7 @@ import {
   Code,
   Container,
   Flex,
+  Heading,
   Modal,
   ModalBody,
   ModalContent,
@@ -45,26 +46,33 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
         borderWidth="2px"
         backgroundColor="#292F3A"
       >
-        <Flex width="full" justifyContent="space-between" padding={1}>
-          <ModalHeader flex="1">{d.name}</ModalHeader>
-          <Button
-            onClick={onClose}
-            size="xs"
-            borderRadius="0"
-            colorScheme="transparent"
-            background={customColors.close}
-            borderBottomWidth="5px"
-            borderBottomColor={customColors.darkClose}
-            _hover={{
-              borderBottomWidth: "8px",
-              background: customColors.hoverClose,
-              borderBottomColor: customColors.darkHoverClose,
-            }}
-          />
-        </Flex>
+        <ModalHeader flex="1">
+          <Flex
+            width="full"
+            justifyContent="space-between"
+            alignItems="center"
+            padding={1}
+          >
+            <Heading size="md">{d.name}</Heading>
+            <Button
+              onClick={onClose}
+              size="xs"
+              borderRadius="0"
+              colorScheme="transparent"
+              background={customColors.close}
+              borderBottomWidth="5px"
+              borderBottomColor={customColors.darkClose}
+              _hover={{
+                borderBottomWidth: "8px",
+                background: customColors.hoverClose,
+                borderBottomColor: customColors.darkHoverClose,
+              }}
+            />
+          </Flex>
+        </ModalHeader>
         <ModalBody width="100%">
           <Container size="container.lg">
-            <Code width="full" borderRadius="0" p={2}>
+            <Code width="full" borderRadius="0" p={2} fontFamily="Fira Code">
               {Object.entries(d.instantWM).map((e, i) => (
                 <Text key={i}>
                   <Square

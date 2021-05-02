@@ -2,11 +2,11 @@ import React from "react";
 import { ThemeData } from "./index";
 import {
   Box,
-  Text,
-  Center,
-  VStack,
   Button,
+  Center,
+  Heading,
   useDisclosure,
+  VStack,
 } from "@chakra-ui/react";
 import { customColors } from "../../util/theme";
 import ThemeModal from "./ThemeModal";
@@ -34,9 +34,14 @@ const GridItem: React.FC<{ data: ThemeData }> = (props) => {
         width="full"
         borderColor={customColors.borderCardBrand}
         padding={3}
+        _hover={{
+          borderColor: customColors.borderBrand,
+        }}
       >
-        <Center>
-          <Text>{d.name}</Text>
+        <Center mb={0.5}>
+          <Heading as="h2" size="md">
+            {d.name}
+          </Heading>
         </Center>
         <VStack spacing="3px">
           <Box bg={p1} width="100%" height="1rem" />

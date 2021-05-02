@@ -1860,6 +1860,11 @@
   "resolved" "https://registry.npmjs.org/@fontsource/inter/-/inter-4.2.2.tgz"
   "version" "4.2.2"
 
+"@fontsource/open-sans@^4.2.2":
+  "integrity" "sha512-NbsL1a9asJO6N/5kRxYPCy0kNhKMi9T75kl4QfIGtmpd/5IfB+UIAUxd9AICmCLaH4Osc2TImeTJj94xc9MNKg=="
+  "resolved" "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-4.2.2.tgz"
+  "version" "4.2.2"
+
 "@fontsource/roboto@^4.2.3":
   "integrity" "sha512-lEnB089GcK3uU3d0MPjwYTUPZBhpKQ2HxvgC+0ib2ElJNISBoS3fHE2sKuZIcCeghWW0fX58OJrZiPgZ3essBg=="
   "resolved" "https://registry.npmjs.org/@fontsource/roboto/-/roboto-4.2.3.tgz"

@@ -25,7 +25,6 @@ const styles = {
 const fonts = {
   heading: "Inter",
   body: "Roboto",
-  code: "Roboto",
 };
 
 const customColors = {
