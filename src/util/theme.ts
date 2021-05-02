@@ -22,6 +22,11 @@ const styles = {
   },
 };
 
+const fonts = {
+  heading: "Fira Code",
+  body: "Fira Code",
+};
+
 const customColors = {
   borderBrand: "#4DADD4",
   borderCardBrand: "#747c90",
@@ -30,6 +35,6 @@ const customColors = {
   hoverClose: "#D37492",
   darkHoverClose: "#CE577C",
 };
-const theme = extendTheme({ config, components, colors, styles });
+const theme = extendTheme({ config, components, colors, styles, fonts });
 export default theme;
 export { customColors };
