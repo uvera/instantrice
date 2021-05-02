@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/instantrice/static/js/main.f2d5d53d.chunk.js",
-    "main.js.map": "/instantrice/static/js/main.f2d5d53d.chunk.js.map",
+    "main.js": "/instantrice/static/js/main.dda0daac.chunk.js",
+    "main.js.map": "/instantrice/static/js/main.dda0daac.chunk.js.map",
     "runtime-main.js": "/instantrice/static/js/runtime-main.5c9ba2c0.js",
     "runtime-main.js.map": "/instantrice/static/js/runtime-main.5c9ba2c0.js.map",
     "static/css/2.dd81b5de.chunk.css": "/instantrice/static/css/2.dd81b5de.chunk.css",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.5c9ba2c0.js",
     "static/css/2.dd81b5de.chunk.css",
     "static/js/2.62c4bb41.chunk.js",
-    "static/js/main.f2d5d53d.chunk.js"
+    "static/js/main.dda0daac.chunk.js"
   ]
 }
