@@ -23,8 +23,9 @@ const styles = {
 };
 
 const fonts = {
-  heading: "Fira Code",
-  body: "Fira Code",
+  heading: "Inter",
+  body: "Roboto",
+  code: "Roboto",
 };
 
 const customColors = {
