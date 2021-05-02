@@ -35,7 +35,7 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
   };
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} motionPreset="slideInBottom">
       <ModalOverlay />
       <ModalContent
         borderRadius="0"
