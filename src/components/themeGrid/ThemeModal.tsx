@@ -79,29 +79,23 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
           <Container size="container.lg">
             <Code width="full" borderRadius="0" p={2} fontFamily="Fira Code">
               {Object.entries(d.instantWM).map((e, i) => (
-                <Text key={i}>
-                  <Square
-                    size={15}
-                    backgroundColor={e[1]}
-                    mr={1}
-                    d="inline-block"
-                  />
-                  instantwm.{e[0].toLowerCase()} :{" "}
-                  <Text as="span">{e[1].toLowerCase()}</Text>
-                </Text>
+                <Flex alignItems="center">
+                  <Square size={15} backgroundColor={e[1]} mr={1} />
+                  <Text key={i}>
+                    instantwm.{e[0].toLowerCase()} :{" "}
+                    <Text as="span">{e[1].toLowerCase()}</Text>
+                  </Text>
+                </Flex>
               ))}
               {Object.entries(d.instantMENU).map((e, i) =>
                 Object.entries(e[1]).map((a, k) => (
-                  <Text key={k}>
-                    <Square
-                      size={15}
-                      backgroundColor={a[1] as string}
-                      mr={1}
-                      d="inline-block"
-                    />
-                    instantmenu.{e[0]}.{a[0]} :{" "}
-                    <Text as="span">{(a[1] as string).toLowerCase()}</Text>
-                  </Text>
+                  <Flex alignItems="center">
+                    <Square size={15} backgroundColor={a[1] as string} mr={1} />
+                    <Text key={k}>
+                      instantmenu.{e[0]}.{a[0]} :{" "}
+                      <Text as="span">{(a[1] as string).toLowerCase()}</Text>
+                    </Text>
+                  </Flex>
                 ))
               )}
             </Code>
