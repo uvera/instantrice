@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
-  Box,
   Button,
   Code,
   Container,

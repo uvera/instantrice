@@ -4,7 +4,12 @@ import { ThemeData } from "./index";
 import GridItem from "./GridItem";
 import { customColors } from "../../util/theme";
 
-const ThemeGrid = () => {
+interface ThemeGridProps {
+  triggerAnim: () => void;
+}
+
+const ThemeGrid: React.FC<ThemeGridProps> = (props) => {
+  const { triggerAnim } = props;
   const [themeData, setThemeData] = useState<ThemeData[]>([]);
 
   useEffect(() => {
@@ -13,8 +18,9 @@ const ThemeGrid = () => {
     )
       .then((r) => r.json())
       .then((r) => setThemeData(r))
+      .then((_) => triggerAnim())
       .catch(console.log);
-  }, []);
+  }, [triggerAnim]);
 
   return (
     <SimpleGrid
