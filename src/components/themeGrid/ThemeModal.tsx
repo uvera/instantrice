@@ -21,10 +21,12 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
   const { isOpen, onClose } = props;
   const d = props.data;
   const value = `${Object.entries(d.instantWM).map((e, i) => {
-    return `instantwm.${e[0]} : ${e[1]}\r\n`;
+    return `instantwm.${e[0]} : ${e[1].toLowerCase()}\r\n`;
   })}${Object.entries(d.instantMENU).map((e, i) => {
     return Object.entries(e[1]).map((a, k) => {
-      return `instantmenu.${e[0]}.${a[0]} : ${a[1] as string}\r\n`;
+      return `instantmenu.${e[0]}.${
+        a[0]
+      } : ${(a[1] as string).toLowerCase()}\r\n`;
     });
   })}
   `.replaceAll(",", "");
@@ -71,7 +73,8 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
                     mr={1}
                     d="inline-block"
                   />
-                  instantwm.{e[0].toLowerCase()} : <Text as="span">{e[1]}</Text>
+                  instantwm.{e[0].toLowerCase()} :{" "}
+                  <Text as="span">{e[1].toLowerCase()}</Text>
                 </Text>
               ))}
               {Object.entries(d.instantMENU).map((e, i) =>
@@ -84,7 +87,7 @@ const ThemeModal: React.FC<ThemeModalProps> = (props) => {
                       d="inline-block"
                     />
                     instantmenu.{e[0]}.{a[0]} :{" "}
-                    <Text as="span">{a[1] as string}</Text>
+                    <Text as="span">{(a[1] as string).toLowerCase()}</Text>
                   </Text>
                 ))
               )}
