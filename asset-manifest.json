@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/instantrice/static/js/main.ce17ff02.chunk.js",
-    "main.js.map": "/instantrice/static/js/main.ce17ff02.chunk.js.map",
+    "main.js": "/instantrice/static/js/main.1836000c.chunk.js",
+    "main.js.map": "/instantrice/static/js/main.1836000c.chunk.js.map",
     "runtime-main.js": "/instantrice/static/js/runtime-main.5c9ba2c0.js",
     "runtime-main.js.map": "/instantrice/static/js/runtime-main.5c9ba2c0.js.map",
     "static/js/2.c3971cfd.chunk.js": "/instantrice/static/js/2.c3971cfd.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.5c9ba2c0.js",
     "static/js/2.c3971cfd.chunk.js",
-    "static/js/main.ce17ff02.chunk.js"
+    "static/js/main.1836000c.chunk.js"
   ]
 }
